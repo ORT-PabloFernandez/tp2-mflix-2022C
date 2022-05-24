@@ -39,6 +39,12 @@ Si ya terminaste o son las 10:00 asegurate de seguir los siguientes pasos para l
 
 ## Listado de endpoint
 -GET /api/movies?pageSize=[pageSize]&page=[page]
+-GET /api/movies/byId/[id]
+-GET /api/movies/winners/1  -> El valuer se puede modificar segun se desee
+-GET /api/movies/byLanguage?[pageSize]&page=[page]&language=[language]
+-GET /api/movies/byTomatoesCalification
+
+
 
 
 
