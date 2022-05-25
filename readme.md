@@ -43,15 +43,15 @@ Si ya terminaste o son las 10:00 asegurate de seguir los siguientes pasos para l
 -GET /api/movies/:id
 (ejemplo: /api/movies/573a1391f29313caabcd71f5)
 
--GET /api/movies?pageSize=[pageSize]&page=[page]/award
-(ejemplo: -GET /api/movies?pageSize=20&page=1/award)
+-GET /api/movies/v2/award?pageSize=[pageSize]&page=[page]
+(ejemplo: -GET /api/movies/v2/award?pageSize=20&page=1)
 
--GET /api/movies?pageSize=[pageSize]&page=[page]/:lenguages
-(ejemplo: -GET /api/movies?pageSize=20&page=1/english)
+-GET /api/movies/v1/:lenguages?pageSize=[pageSize]&page=[page]/
+(ejemplo: -GET /api/movies/v1/english?pageSize=20&page=1)
 
--GET /api/movies?pageSize=[pageSize]&page=[page]/ranking
-(ejemplo: -GET /api/movies?pageSize=20&page=1/ranking)
+-GET /api/movies/v3/ranking?pageSize=[pageSize]&page=[page]
+(ejemplo: -GET /api/movies/v3/ranking?pageSize=20&page=1)
 
-<!-- (estoy teniendo una dificultad ya que no me recibe cualquier cosa que agregue despues del [page] y no logro darme cuenta donde tengo la falla, por lo que, al no recibir respuesta, armo la solucion a pesar de no poder lograr los endpoint pedidos) -->
+<!-- (estoy teniendo una dificultad ya que no me recibe cualquier cosa que agregue despues del [page] y no logro darme cuenta donde tengo la falla, por lo que, al no recibir respuesta, armo la solucion a pesar de no poder lograr los endpoint pedidos) ==> visto con el profesor 22:02-->
 
 

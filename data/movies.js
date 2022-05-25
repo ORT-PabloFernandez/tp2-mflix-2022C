@@ -29,7 +29,7 @@ async function getMoviesByLen(pageSize, page, len){
     const movies = await connectiondb
                         .db(DATABASE)
                         .collection(MOVIES)
-                        .find({_len : len}).limit(pageSize).skip(pageSize * page)
+                        .find({languages : len}).limit(pageSize).skip(pageSize * page)
                         .toArray();    
     return movies;
 }
