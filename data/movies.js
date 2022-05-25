@@ -51,4 +51,14 @@ async function getAllMoviesByLanguage(pageSize, page, lang){
     return movies;
 }
 
-module.exports = { getAllMovies, getMovieId, getAwardWinners, getAllMoviesByLanguage };
+async function getTomatoesFresh(){
+    const connectiondb = await conn.getConnection();
+    const movies = await connectiondb
+                        .db(DATABASE)
+                        .collection(MOVIES)
+                        .find({})
+                        .toArray().filter(tomatoes => tomatoes.fresh >= 0 ).sort((movieA, movieB) => movieA.tomatoes.fresh > movieB.fresh  ? 1: -1);    
+    return movies;
+}
+
+module.exports = { getAllMovies, getMovieId, getAwardWinners, getAllMoviesByLanguage, getTomatoesFresh };

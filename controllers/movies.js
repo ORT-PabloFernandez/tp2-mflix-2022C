@@ -16,4 +16,8 @@ async function getAllMoviesByLanguage(pageSize, page, lang){
     return movies.getAwardWinners(pageSize, page, lang);
 }
 
-module.exports = { getAllMovies, getMovieId, getAwardWinners, getAllMoviesByLanguage };
+async function getTomatoesFresh(){    
+    return movies.getTomatoesFresh();
+}
+
+module.exports = { getAllMovies, getMovieId, getAwardWinners, getAllMoviesByLanguage, getTomatoesFresh };

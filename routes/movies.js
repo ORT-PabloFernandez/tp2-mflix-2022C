@@ -21,7 +21,7 @@ router.get('/winners', async (req, res) => {
     res.json(awards)
 });
 
-router.get('/language', async (req, res) => { 
+router.get('/language/', async (req, res) => { 
     const pageSize = req.query.pageSize ? parseInt(req.query.pageSize): 0;
     const page = req.query.page ? parseInt(req.query.page): 0;
     const lang = req.query.language ? req.query.language : "";
@@ -32,6 +32,11 @@ router.get('/language', async (req, res) => {
         awards = await controller.getAllMovies();
     };
     res.json(awards)
+});
+
+router.get('/tomatoes', async (req, res) => { 
+    const sortedByTomatoes = await controller.getTomatoesFresh();
+    res.json(sortedByTomatoes)
 });
 
 module.exports = router;
