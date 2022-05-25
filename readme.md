@@ -44,9 +44,6 @@ Si ya terminaste o son las 10:00 asegurate de seguir los siguientes pasos para l
 -GET /api/movies/byLanguage?[pageSize]&page=[page]&language=[language]
 -GET /api/movies/byTomatoesCalification
 
-
-
-
-
-
-
+## Extra (casi)
+-GET /api/users/listUsers
+-GET /api/users/commentsByUser/[id]
