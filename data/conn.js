@@ -5,11 +5,11 @@ const client = new mongoclient(uri);
 
 let instance = null;
 
-async function getConnection(){
-    if(instance == null){
+async function getConnection() {
+    if (instance == null) {
         instance = await client.connect();
     }
     return instance;
 }
 
-module.exports = {getConnection};
+module.exports = { getConnection };
