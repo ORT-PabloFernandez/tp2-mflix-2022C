@@ -44,11 +44,13 @@ Si ya terminaste o son las 10:00 asegurate de seguir los siguientes pasos para l
 (ejemplo: /api/movies/573a1391f29313caabcd71f5)
 
 -GET /api/movies?pageSize=[pageSize]&page=[page]/award
+(ejemplo: -GET /api/movies?pageSize=20&page=1/award)
 
 -GET /api/movies?pageSize=[pageSize]&page=[page]/:lenguages
 (ejemplo: -GET /api/movies?pageSize=20&page=1/english)
 
 -GET /api/movies?pageSize=[pageSize]&page=[page]/ranking
+(ejemplo: -GET /api/movies?pageSize=20&page=1/ranking)
 
 <!-- (estoy teniendo una dificultad ya que no me recibe cualquier cosa que agregue despues del [page] y no logro darme cuenta donde tengo la falla, por lo que, al no recibir respuesta, armo la solucion a pesar de no poder lograr los endpoint pedidos) -->
 
