@@ -35,7 +35,7 @@ router.get('/language/:lan', async(req, res)=>{
 //4) Peliculas por puntaje Fresh
 
 router.get('/fresh', async(req, res) =>{
-    const movies = await controller.getMoviesByTomatoes(minFresh);
+    const movies = await controller.getMoviesByTomatoes();
     res.json(movies);
 })
 
