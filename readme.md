@@ -40,7 +40,14 @@ Si ya terminaste o son las 10:00 asegurate de seguir los siguientes pasos para l
 ## Listado de endpoint
 -GET /api/movies?pageSize=[pageSize]&page=[page]
 
+1: GET  /api/movies/:id                                         
+                (ej: 127.0.0.1:8080/api/movies/573a1391f29313caabcd7626)
+2: GET  /api/movies/winMovies/:cantPremio                       
+                (ej: 127.0.0.1:8080/api/movies/winMovies/1)
+3: GET  /api/movies?lang=English&pageSize=[pageSize]&page=[page]
+                (ej: 127.0.0.1:8080/api/movies?lang=English&pageSize=50&page=1)
+4: GET  /api/movies/tomatoesRanking/:ranking
+                (ej: 127.0.0.1:8080/api/movies/tomatoesRanking/1)
 
 
-
-
+Student: Diego Ponzo

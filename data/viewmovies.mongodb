@@ -1,0 +1,3 @@
+use('sample_mflix');
+
+db.movies.find();
