@@ -5,13 +5,13 @@ Es tu primer día en [tecnoshare.com](http://tecnoshare.com) luego de un intenso
 
 Luego de abrir el correo encuentras un mail de tu Líder Técnico con tu primera asignación!! 💪
 
-> Bienvenid@! estuvimos esperando por horas que llegares, tenemos varias tareas criticas y prioritarias en nuestro backlog. Por favor presta mucha atención a las instrucciones. No dudes en preguntarme cualquier cosa, aunque generalmente estoy muy ocupado resolviendo problemas heredados de las rotaciones de los desarrolladores.
+> Bienvenid@! estuvimos esperando por horas que llegaras, tenemos varias tareas criticas y prioritarias en nuestro backlog. Por favor presta mucha atención a las instrucciones. No dudes en preguntarme cualquier cosa, aunque generalmente estoy muy ocupado resolviendo problemas heredados de las rotaciones de los desarrolladores.
 
 > En el presente repositorío encontrarás un proyecto de nodejs que ya tiene codigo base del backend con el que vamos a trabajar. Te aconsejo que sigas los siguientes pasos para armar tu entorno de trabajo. 
 
-> 1. Realizar un Fork del presente repositorio
-> 2. Realizar un clone del presente repositorio
-> 3. Instalar las dependencias
+> 1. Realizar un Fork del presente repositorio.
+> 2. Realizar un clone del presente repositorio.
+> 3. Instalar las dependencias.
 > 4. Solicitar las variables de entorno que contiene la conexion string a mongodb (antes de preguntar, revisa el chat, seguro estan ahí)
 > 5. Ejecutar el servidor web de la api REST con el script de npm start-dev si queres trabajar con nodemon (tendrías que instalarlo) con start solo, tambien funciona. 
 > El backend se conecta con una base de datos Mongodb en la cual se encuentra la base de datos **sample_mflix** con una collection llamada **movies**, ahí se encuentran aprox. 23.000 películas.
@@ -39,7 +39,10 @@ Si ya terminaste o son las 10:00 asegurate de seguir los siguientes pasos para l
 
 ## Listado de endpoint
 -GET /api/movies?pageSize=[pageSize]&page=[page]
-
+-GET /api/movies/getMovieByID?id=[id]
+-GET /api/movies/getMovieWinners?pageSize=[pageSize]&page=[page]
+-GET /api/movies/getMovieByLanguages?language=[language]&pageSize=[pageSize]&page=[page]
+-GET /api/movies/getMoviesSorterByFresh?pageSize=[pageSize]&page=[page]
 
 
 

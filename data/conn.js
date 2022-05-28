@@ -1,6 +1,7 @@
 require('dotenv').config();
 const mongoclient = require('mongodb').MongoClient;
-const uri = process.env.MONGODB;
+
+const uri = "mongodb+srv://admin:tp2@cluster0.3bm3a.azure.mongodb.net/?retryWrites=true&w=majority";
 const client = new mongoclient(uri);
 
 let instance = null;
